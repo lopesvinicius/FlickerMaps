@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                tools:context=".CreateMessageActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lblSearcher"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/searcher"
+        android:layout_alignStart="@+id/searcher"
+        android:layout_marginTop="44dp" />
+
+    <EditText android:id="@+id/searcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searcher"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+    </EditText>
+
+  <Button android:id="@+id/send"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+      android:onClick="onSendMessage"
+          android:text="@string/send"
+      android:layout_marginBottom="50dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true" />
+
+
+    <RadioGroup
+        android:id="@+id/radioLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp">
+
+        <RadioButton
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao1"
+            android:id="@+id/rbtOpcao1"
+            android:clickable="true"
+            android:checked="true"
+            android:singleLine="false"
+            android:layout_above="@+id/radioLimit"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+        <RadioButton
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao3"
+            android:id="@+id/rbtOpcao3"
+            android:layout_alignBottom="@+id/radioLimit"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_toEndOf="@+id/send"
+            android:layout_toRightOf="@+id/send" />
+
+        <RadioButton
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/rbtOpcao2"
+            android:layout_alignBottom="@+id/radioLimit"
+            android:layout_alignRight="@+id/searcher"
+            android:layout_alignEnd="@+id/searcher" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/limit"
+        android:id="@+id/textView"
+        android:layout_below="@+id/searcher"
+        android:layout_alignLeft="@+id/searcher"
+        android:layout_alignStart="@+id/searcher"
+        android:layout_marginTop="35dp" />
+
+
+
+</RelativeLayout>

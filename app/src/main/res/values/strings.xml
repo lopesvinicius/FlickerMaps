@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Flickr - Maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_settings">Settings</string >
+    <string name="send">Pesquisar</string>
+    <string name="chooser">Send message...</string>
+
+    <string name= "searcher"></string>
+    <string name= "lblSearcher">Digite algo para pesquisar</string>
+    <string name= "limit">Limite</string>
+    <string name= "opcao1">10</string>
+    <string name= "opcao2">20</string>
+    <string name= "opcao3">30</string>
+</resources>

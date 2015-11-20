@@ -1,0 +1,8 @@
+<resources>
+    <!--
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=E1:A8:D1:4A:59:AE:77:A1:66:9B:2C:0C:F0:99:B4:DF:65:08:E1:49%3Bcom.example.aluno.finalproject
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyB6jruMAOcNtIZVr-egj-XtU5w6gLF82tk
+    </string>
+</resources>
